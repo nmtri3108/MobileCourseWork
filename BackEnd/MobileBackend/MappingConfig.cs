@@ -1,5 +1,6 @@
 using AutoMapper;
 using MobileBackend.Dtos;
+using MobileBackend.Dtos.Hiking;
 using MobileBackend.Dtos.UserDtos;
 using MobileBackend.Models;
 
@@ -11,8 +12,13 @@ namespace MobileBackend
         {
             var mappingConfig = new MapperConfiguration(config =>
             {
+                
+                // hikingdto to hikiding
+                config.CreateMap<HikingUpsertDto, Hiking>().ReverseMap();
+                
                 // bookupsertrequest to book
                 config.CreateMap<BookUpSertRequest, Book>().ReverseMap();
+                
                 // mapping user
                 config.CreateMap<User, AuthenticateResponse>();
                 config.CreateMap<RegisterRequest, User>();

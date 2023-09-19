@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using MobileBackend.Authorization;
 using MobileBackend.Dtos;
 using MobileBackend.Models;
 using MobileBackend.Services.IServices;
@@ -10,7 +9,6 @@ namespace MobileBackend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    //[Authorize]
     public class BooksController : ControllerBase
     {
         private readonly IBookService _bookService;
@@ -61,7 +59,6 @@ namespace MobileBackend.Controllers
             return Ok(book);
         }
         
-        //[Authorize(Role.Admin)]
         [HttpDelete("{id:int}")]
         public IActionResult Delete([FromRoute] int id)
         {
@@ -73,19 +70,11 @@ namespace MobileBackend.Controllers
             return Ok();
         }
         
-        //[Authorize(Role.Admin)]
         [HttpGet("search/{keyword}")]
         public IActionResult Search(string keyword)
         {
             var result = _bookService.Search(keyword);
             return Ok(result);
         }
-        
-        // [HttpGet("favourite/{id:int}/{bookId:int}")]
-        // //http:localhost:5000/api/books/favourite/1/2
-        // public IActionResult Favourite([FromRoute] int id, int bookId)
-        // {
-        //     return Ok();
-        // }
     }
 }

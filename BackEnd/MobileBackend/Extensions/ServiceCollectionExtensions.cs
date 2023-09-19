@@ -28,6 +28,7 @@ namespace MobileBackend.Extensions
             service.AddScoped<IBookService, BookService>();
             service.AddScoped<IUserService, UserService>();
             service.AddScoped<IJwtUtils, JwtUtils>();
+            service.AddScoped<IHikingService, HikingService>();
             return service;
         }
         

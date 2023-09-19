@@ -8,10 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bdebcc8-4a37-435c-96a8-3fca1e3db665" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MobileBackend/Models/Hiking.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MobileBackend/Models/Observation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MobileBackend/Controllers/HikingsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MobileBackend/Dtos/Hiking/HikingUpsertDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MobileBackend/Services/HikingService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MobileBackend/Services/IServices/IHikingService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WepApiKhoiPhi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WepApiKhoiPhi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileBackend/DbContext/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MobileBackend/DbContext/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileBackend/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MobileBackend/Controllers/BooksController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileBackend/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MobileBackend/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileBackend/MappingConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MobileBackend/MappingConfig.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695093691213</updated>
-      <workItem from="1695093692706" duration="1898000" />
+      <workItem from="1695093692706" duration="3188000" />
     </task>
     <servers />
   </component>
