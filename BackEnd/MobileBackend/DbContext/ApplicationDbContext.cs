@@ -9,6 +9,8 @@ namespace MobileBackend.DbContext
         { }
 
         public DbSet<Book> Books { get; set; }
+        public DbSet<Hiking> Hikings { get; set; }
+        public DbSet<Observation> Observations { get; set; }
         public DbSet<User> Users { get; set; }
     }
 }
